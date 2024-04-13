@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Wed Feb 14 10:12:55 2024 as: nmap -T4 -sC -sV -oN bruteit.txt 10.10.137.40
+# Nmap done at Wed Feb 14 10:12:57 2024 -- 1 IP address (0 hosts up) scanned in 2.47 seconds

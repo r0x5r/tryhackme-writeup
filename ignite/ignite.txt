@@ -1,0 +1,13 @@
+# Nmap 7.94 scan initiated Tue Feb 20 19:15:53 2024 as: nmap -T4 -sC -sV -oN ignite.txt 10.10.32.9
+Nmap scan report for 10.10.32.9
+Host is up (0.18s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Welcome to FUEL CMS
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 20 19:16:42 2024 -- 1 IP address (1 host up) scanned in 48.90 seconds

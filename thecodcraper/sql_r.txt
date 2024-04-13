@@ -1,0 +1,15 @@
+POST /administrator.php HTTP/1.1
+Host: 10.10.198.139
+User-Agent: C
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.198.139/administrator.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 21
+Origin: http://10.10.198.139
+DNT: 1
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+username=*&password=*

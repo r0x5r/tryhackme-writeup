@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Mon Mar 11 08:39:14 2024 as: nmap -T4 -sC -sV -oN ra.txt 10.10.239.82
+# Nmap done at Mon Mar 11 08:39:16 2024 -- 1 IP address (0 hosts up) scanned in 2.50 seconds

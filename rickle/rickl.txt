@@ -1,0 +1,17 @@
+# Nmap 7.94 scan initiated Sat Mar  2 08:38:34 2024 as: nmap -T4 -sC -sV -oN rickl.txt 10.10.35.21
+Nmap scan report for 10.10.35.21
+Host is up (0.23s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 9c:ae:1b:17:f4:03:fe:06:4d:96:0a:c7:13:45:e6:8a (RSA)
+|   256 d6:fc:de:0a:f2:2b:65:7e:e2:29:f3:2a:39:a6:11:79 (ECDSA)
+|_  256 d0:8e:ee:71:fe:2c:d5:c3:a5:a2:9a:fb:87:6e:e1:50 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Rick is sup4r cool
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  2 08:38:57 2024 -- 1 IP address (1 host up) scanned in 23.11 seconds

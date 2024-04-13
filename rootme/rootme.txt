@@ -1,0 +1,8 @@
+# Nmap 7.94 scan initiated Fri Feb  2 06:57:58 2024 as: nmap -T4 -sC -sV -oN rootme.txt 10.10.89.194
+Nmap scan report for 10.10.89.194
+Host is up (0.18s latency).
+All 1000 scanned ports on 10.10.89.194 are in ignored states.
+Not shown: 1000 closed tcp ports (conn-refused)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  2 06:58:15 2024 -- 1 IP address (1 host up) scanned in 16.81 seconds

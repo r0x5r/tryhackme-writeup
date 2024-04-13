@@ -1,0 +1,34 @@
+# Nmap 7.94 scan initiated Fri Mar 29 07:51:31 2024 as: nmap -T4 -sC -sV -oN active.txt 10.10.65.77
+Nmap scan report for 10.10.65.77
+Host is up (0.28s latency).
+Not shown: 992 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2024-03-29 07:51:49Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2024-03-29T07:52:18+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: THM-AD
+|   NetBIOS_Domain_Name: THM-AD
+|   NetBIOS_Computer_Name: ATTACKTIVEDIREC
+|   DNS_Domain_Name: spookysec.local
+|   DNS_Computer_Name: AttacktiveDirectory.spookysec.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-03-29T07:52:05+00:00
+| ssl-cert: Subject: commonName=AttacktiveDirectory.spookysec.local
+| Not valid before: 2024-03-28T07:51:29
+|_Not valid after:  2024-09-27T07:51:29
+Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb2-time: ERROR: Script execution failed (use -d to debug)
+|_smb2-security-mode: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Mar 29 07:52:22 2024 -- 1 IP address (1 host up) scanned in 51.87 seconds

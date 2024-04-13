@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Fri Feb  9 07:07:02 2024 as: nmap -T4 -sC -sV -oN relvenat.txt 10.10.114.211
+# Nmap done at Fri Feb  9 07:07:04 2024 -- 1 IP address (0 hosts up) scanned in 2.42 seconds

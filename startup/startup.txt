@@ -1,0 +1,38 @@
+# Nmap 7.93 scan initiated Mon Jan 15 12:28:40 2024 as: nmap -T4 -sC -sV -oN startup.txt 10.10.93.99
+Warning: 10.10.93.99 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.93.99
+Host is up (0.16s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE   VERSION
+21/tcp  open     ftp       vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxrwxrwx    2 65534    65534        4096 Nov 12  2020 ftp [NSE: writeable]
+| -rw-r--r--    1 0        0          251631 Nov 12  2020 important.jpg
+|_-rw-r--r--    1 0        0             208 Nov 12  2020 notice.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.17.92.54
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp  open     ssh       OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9a60b841d2201a401304843612bab94 (RSA)
+|   256 ec13258c182036e6ce910e1626eba2be (ECDSA)
+|_  256 a2ff2a7281aaa29f55a4dc9223e6b43f (ED25519)
+80/tcp  open     http      Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Maintenance
+880/tcp filtered unknown
+912/tcp filtered apex-mesh
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan 15 12:29:26 2024 -- 1 IP address (1 host up) scanned in 45.63 seconds
